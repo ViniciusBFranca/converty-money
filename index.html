@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts.js"></script>
+
     <title>DevClub - Converty Money</title>
 </head>
 
@@ -27,9 +27,9 @@
 
         <label>
             Coverter <b>para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
 
@@ -38,13 +38,13 @@
             <input class="input-currency" placeholder="R$10.000,00">
         </label>
 
-        <button class="covert-button">Converter</button>
+        <button class="convert-button">Converter</button>
 
         <section>
             <div class="currency-box">
                 <img src="./assets/real.png" alt="moeda-br-converter">
                 <p class="currency">Real</p>
-                <p class="value">R$ 0,00</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
 
             <img class="arrow" src="./assets/arrow.png" alt="seta">
@@ -52,11 +52,14 @@
             <div class="currency-box">
                 <img src="./assets/dolar.png" alt="moeda-usa-convertida">
                 <p class="currency">Dólar</p>
-                <p class="value">US$ 0,00</p>
+                <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
 
     </main>
+
+    <script src="./scripts.js"></script>
+
 </body>
 
 </html>
